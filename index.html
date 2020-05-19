@@ -1,1 +1,41 @@
-Hello World
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="j2.css">
+<title>
+瞬間記憶ゲーム
+</title>
+<script type="text/javascript" src="j2.js">
+</script>
+</head>
+
+<body>
+<center>
+<h2>【 瞬間記憶ゲーム 】</h1>
+<p>スタートしたら<font size="+2">1秒後</font>に画像が隠されるから回答して<font size="+2">answerボタン</font>を押してね！</p>
+<!--<h3 onclick="shuffle()" id="line1"> ここをクリックしてスタート！！-->
+<input type="button" value="start" name="btn" id="btn1" onclick="shuffle()">
+<input type="button" value="reset" name="btn" id="btn2" onclick="init()">
+</h1>
+<table>
+<tr>
+<td><img src="../../images/1.jpg" width=180 height=180 id=image0></td>
+<td><img src="../../images/2.jpg" width=180 height=180 id=image1></td>
+<td><img src="../../images/3.jpg" width=180 height=180 id=image2></td>
+</tr>
+</table>
+<h3  id="line2"> ↓↓　回答欄　↓↓
+</h1>
+<table>
+<tr>
+<td><img onclick="next1()" src="../../images/1.jpg" width=180 height=180 id=image0></td>
+<td><img onclick="next2()" src="../../images/2.jpg" width=180 height=180 id=image1></td>
+<td><img onclick="next3()" src="../../images/3.jpg" width=180 height=180 id=image2></td>
+</tr>
+</table>
+
+<input type="button" value="answer" name="btn" id="btn3" onclick="answer()">
+</center>
+</body>
+</html>
