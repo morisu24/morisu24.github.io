@@ -1,0 +1,26 @@
+
+body { 
+     background-image: url("../kagoshima.jpg");
+	 background-size: cover;
+}
+
+h2{
+    background-color:#99cc33;
+    color:green;
+}
+
+h3{
+	background-color:white;
+}
+
+#btn1, #btn3 {
+        width: 90px;
+        height:40px;
+        font-size:x-large;
+        color:red;
+}
+
+#answer {
+       font-size: x-large;
+       color:red;
+}
