@@ -350,7 +350,6 @@ pre {
     0 101px 74px rgba(0, 0, 0, 0.13);
 }
 
-
 .cd-nav-trigger .cd-nav-icon {
     /* icon created in CSS */
     position: absolute;
@@ -368,7 +367,6 @@ pre {
     height: 2px;
     background-color: #ffffff;
 }
-
 
 .cd-nav-trigger .cd-nav-icon::before, .cd-nav-trigger .cd-nav-icon:after {
     /* upper and lower lines of the menu icon */
