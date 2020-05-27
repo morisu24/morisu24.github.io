@@ -1,43 +1,379 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="main.css">
-<link rel="shortcut icon" href="favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sota MORITA</title>
+ 
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-<title>
-Sota MORITA
-</title>
-<script type="text/javascript" src="main.js">
-</script>
+    <link href="http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700" rel="stylesheet", type="text/css">
+
+
+     <script src="scripts/modernizr.js"></script>
+
 </head>
 
 <body>
-<center>
-<h2>【 Sota MORITA 】</h1>
-<p>スタートしたら<font size="+2">1秒後</font>に画像が隠されるから回答して<font size="+2">answerボタン</font>を押してね！</p>
-<!--<h3 onclick="shuffle()" id="line1"> ここをクリックしてスタート！！-->
-<input type="button" value="start" name="btn" id="btn1" onclick="shuffle()">
-<input type="button" value="reset" name="btn" id="btn2" onclick="init()">
-</h1>
-<table>
-<tr>
-<td><img src="../../images/1.jpg" width=180 height=180 id=image0></td>
-<td><img src="../../images/2.jpg" width=180 height=180 id=image1></td>
-<td><img src="../../images/3.jpg" width=180 height=180 id=image2></td>
-</tr>
-</table>
-<h3  id="line2"> ↓↓　回答欄　↓↓
-</h1>
-<table>
-<tr>
-<td><img onclick="next1()" src="../../images/1.jpg" width=180 height=180 id=image0></td>
-<td><img onclick="next2()" src="../../images/2.jpg" width=180 height=180 id=image1></td>
-<td><img onclick="next3()" src="../../images/3.jpg" width=180 height=180 id=image2></td>
-</tr>
-</table>
 
-<input type="button" value="answer" name="btn" id="btn3" onclick="answer()">
-</center>
+ 
+        <!-- indexのアイコン -->
+        <a href="#cd-nav" class="cd-nav-trigger">
+            <span class="cd-nav-icon"></span>
+
+            <svg x="0px" y="0px" width="54px" height="54px" >
+                <circle fill="transparent" stroke="#90D4C5" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+            </svg>
+        </a>
+
+        <!-- twitterアイコン -->
+        <a href="https://twitter.com/kurinezumii" class="twitter-link">
+            <span class="twitter-icon"></span>
+            <img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter" width="54px" height="54px">
+        </a>
+
+        <!-- メールアイコン-->
+        <a href="mailto:moritaro24.105@gmail.com" class="mail-link">
+            <span class="mail-icon"></span>
+            <img src="img/mail-icon.png" alt="Twitter" width="54px" height="54px">
+        </a>
+        <!-- GitHubアイコン-->
+        <a href="https://github.com/morisu24" class="github-link">
+            <span class="github-icon"></span>
+            <img src="img/GitHub-Mark-64px.png" alt="GitHub" width="55px" height="55px">
+
+        </a>
+        <!-- はてなブログアイコン-->
+        <a href="https://mo-ri-24.hateblo.jp/" class="hatenablog-link">
+            <span class="hatenablog-icon"></span>
+            <img src="img/hatenablog-logo.svg" alt="Hatena Blog" width="55px" height="55px">
+
+        </a>
+
+
+    <div id="cd-nav" class="cd-nav">
+        <div class="cd-navigation-wrapper">
+            <div class="cd-half-block">
+
+
+                <nav>
+                    <ul class="cd-primary-nav">
+                        <li><a href="index.html" class="selected">ABOUT</a></li>
+                        <li><a href="http://www.ibe.kagoshima-u.ac.jp/~fics/">LABORATORY</a></li>
+                    </ul>
+                </nav>
+            </div><!-- .cd-half-block -->
+            
+            <div class="cd-half-block">
+                <address>
+                    <ul class="cd-contact-info">
+                        <li><a href="mailto:info@myemail.co">moritaro24.105@gmail.com</a></li>
+                    </ul>
+                    <ul class="cd-contact-socials">
+                        <li><a href="#0">Twitter</a></li>   
+                    </ul>
+                </address>
+            </div> <!-- .cd-half-block -->
+        </div> <!-- .cd-navigation-wrapper -->
+    </div> <!-- .cd-nav -->
+
+    <div class="site-container">
+
+        <header class="site-header cf">
+            <div class="site-title"><a href="index.html"><span class="margin-10px"> HOME </span></a></div>
+
+            <div class="cf"></div>
+
+            <div class="site-tagline">
+                <div class="site-tagline-inner">
+                    
+                </div>
+            </div>
+            
+        </header><!-- / .site-header -->
+
+        <section class="site-content">
+            
+            <div class="profile">
+                <span class="cd-nav-icon"></span>
+                <div class="name">
+                    <span class="name-en">Sota MORITA</span><span class="name-ja">森田 聡太</span>
+                </div>
+                <div class="bio-text">
+                    
+                </div>
+
+            </div>
+            
+            <div class="projects-feed cf">
+
+                <article class="project cf">
+                    <a class="biography" href="#portfolio-item.html" title="Biography">
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="img/school-cap.jpg"></div>
+                                
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-1.jpg"></div>
+                                <![endif]-->
+                                
+                                <noscript>
+                                    <img src="img/school-cap.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">BIOGRAPHY<small> 経歴 </small></h2> 
+                                        
+                                        <p class="thumbnail-description">Education <small> -教育- </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </a>
+            
+                    <div class="biography-details">
+                        <div class="arrow bio-close-trigger">
+                        
+                        </div>
+                        <div class="bio-contents">
+                            <h5>BIOGRAPHY<small> 経歴</small></h5>
+                            <h6>Education<small> 教育</small></h6>
+                            <div>
+                                <dl class="bio-cell">
+                                    <dt>2020 - Current</dt>
+                                    <dd><a href="http://www.ibe.kagoshima-u.ac.jp/">鹿児島大学大学院 理工学研究科 工学専攻（情報・生体工学プログラム）</a></dd>
+                                    <dd><a href="http://www.ibe.kagoshima-u.ac.jp/~fics/">知能画像工学研究室（渡邊研究室）</a></dd>
+                                    <dd>修士（工学）</dd>
+                                </dl>
+                                <dl class="bio-cell">
+                                    <dt>2018 - 2020</dt>
+                                    <dd><a href="http://www.ibe.kagoshima-u.ac.jp/">鹿児島大学 工学部 情報生体システム工学科</a></dd>
+                                    <dd><a href="http://www.ibe.kagoshima-u.ac.jp/~fics/">知能画像工学研究室（渡邊研究室）</a></dd>
+                                    <dd>学士（工学）</dd>
+                                    <dd><li>GPA 3.35 / 4.00（学部長賞）</li></dd>
+                                </dl>
+                                <dl class="bio-cell">
+                                    <dt>2013 - 2018</dt>
+                                    <dd><a href="https://www.hi.kumamoto-nct.ac.jp/">熊本高等専門学校 人間情報システム工学科</a></dd>
+                                    <dd>縄田研究室</dd>
+                                    <dd>準学士</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="project cf">
+                    <a class="skill" href="#portfolio-item.html" title="Skill">
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="img/tree-map.jpg"></div>
+                                
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-2.jpg"></div>
+                                <![endif]-->
+                                
+                                <noscript>
+                                    <img src="img/tree-map.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">SKILL<small> スキル </small></h2>
+                                        
+                                        <p class="thumbnail-description">PROGRAMING <small> -プログラミング- </small></p>
+                                        <p class="thumbnail-description">DESIGN <small> -デザイン- </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="skill-details">
+                        <div class="arrow ski-close-trigger">
+                        
+                        </div>
+                        <div class="ski-contents">
+                            <h5>SKILL<small> スキル</small></h5>
+                            <div>
+                                <dl class="ski-cell">
+                                    <dt>PROGRAMING</dt>
+                                    <dd>C</dd><div class="rate rate3"></div><br>
+                                    <dd>C++</dd><div class="rate rate2"></div><br>
+                                    <dd>C#</dd><div class="rate rate2"></div><br>
+                                    <dd>Python</dd><div class="rate rate3"></div><br>
+                                    <dd>Java</dd><div class="rate rate2"></div><br>
+                                    <dd>Perl</dd><div class="rate rate2"></div><br>
+                                    <dd>JavaScript</dd><div class="rate rate2"></div><br>
+                                    <dd>jQuery</dd><div class="rate rate2"></div><br>
+                                    <dd>R</dd><div class="rate rate2"></div><br>
+                                    <dd>MySQL</dd><div class="rate rate1-5"></div><br>
+                                
+                                </dl>
+                                <dl class="ski-cell">
+                                    <dt>DESIGN</dt>
+                                    <dd>Photoshop</dd><div class="rate rate1-5"></div><br>
+                                    <dd>Lightroom</dd><div class="rate rate1-5"></div><br>
+                                    <dd>Illustrator</dd><div class="rate rate1-5"></div><br>
+                                </dl>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="project cf">
+                    <a class="publications" href="#portfolio-item.html" title="Publications">
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="img/poster.jpg"></div>
+                                
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-3.jpg"></div>
+                                <![endif]-->
+                                
+                                <noscript>
+                                    <img src="img/poster.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">PUBLICATIONS<small> 外部発表 </small></h2>
+                                        
+                                        <p class="thumbnail-description">Posters<small> -ポスター発表- </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="publications-details">
+                        <div class="arrow pub-close-trigger">
+                        
+                        </div>
+                        <div class="pub-contents">
+                            <h5>PUBLICATIONS<small> 外部発表</small></h5>
+                            <h6>Posters<small> ポスター発表</small></h6>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div><u>森田 聡太</u>,福元 伸也, 鹿嶋 雅之, 渡邊 睦.</div>
+                                        <div>人物状態認識に基づく適応的情報呈示に関する研究.</div>
+                                        <div>2019年度電気・情報関係学会九州支部連合大会（第72回連合大会）講演論文集, PS-34 (2019)</div>
+                                        <div href="https://doi.org/10.11527/jceeek.2019.0_278" class="DOI-link">DOI</div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="project cf">
+                    <a class="hobbies" href="#portfolio-item.html" title="Hobbies">
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="img/hobby.jpg"></div>
+                                
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-4.jpg"></div>
+                                <![endif]-->
+                                
+                                <noscript>
+                                    <img src="img/hobby.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">HOBBIES<small> 趣味 </small></h2>
+                                        
+                                        <p class="thumbnail-description">Design<small> -デザイン- </small></p>
+                                        <p class="thumbnail-description">Photo<small> -写真- </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="hobbies-details">
+                        <div class="arrow hob-close-trigger">
+                        
+                        </div>
+                        <div class="hob-contents">
+                            <h5>HOBBIES<small> 趣味</small></h5>
+                            <div>
+                                <dl class="hob-cell">
+                                    <dt>DESIGN</dt>
+                                    <dd>ポスターやサイトのデザインを眺たり、ちょっとしたイラストを書くのが好きです。（絵は下手ですが...）</dd>
+                                </dl>
+                                <dl class="hob-cell">
+                                    <dt>PHOTO</dt>
+                                    <dd>旅行の写真を加工したりしています。</dd>
+                                </dl>
+                                
+                            </div>
+                            <div>
+                                <div href="https://suzuri.jp/morinorisu" class="hob-link">SUZURI</div>
+                                <div href="https://www.instagram.com/moritaro24" class="hob-link">Instagram</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                
+            <!--END .projects-feed-->
+            </div>
+                        
+        <!--END .site-content-->
+        </section>
+
+         <footer class="site-footer cf">
+            <!-- 
+            <p class="footer-text">© Copyright 2015 </p>
+            -->
+            <nav class="languages" role="navigation">
+              <ul>
+             <!--
+                <li class="active"><a href="#">JA |</a></li>
+                <li><a href="#">EN</a></li>
+             -->
+              </ul>
+            </nav> 
+        </footer>
+    <!--END .site-container-->
+    </div>
+
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/jquery.fitvids.js"></script>
+    <script src="scripts/jquery.imagesloaded.min.js"></script>
+    <script src="scripts/main.js"></script>  
+ 
+
 </body>
 </html>
