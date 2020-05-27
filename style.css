@@ -734,6 +734,11 @@ div.image img { width: 100%; }
 .project-meta .tags a { margin-left: 10px; }
 .project-meta .tags a:first-child { margin-left: 0; }
 
+
+.biography, .skill,
+.publication, .hobbies {
+    display: block;
+}
 /*===== Paginations =====*/
 
 /*===== Footer =====*/
@@ -1508,8 +1513,8 @@ div.image img { width: 100%; }
     .cd-nav .cd-primary-nav a {
         font-size: 54px;
     }
-    .cd-nav .cd-contact-info li, 
-    .cd-nav .cd-contact-info a, 
+    .cd-nav .cd-contact-info li,
+    .cd-nav .cd-contact-info a,
     .cd-nav .cd-contact-info span {
         font-size: 24px;
     }
