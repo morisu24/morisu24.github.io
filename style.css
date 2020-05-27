@@ -15,9 +15,7 @@ Description: A template by Aristotheme.
 /*          - Project Assets
 /*          - Project Content
 /*          - Paginations
-/*  - News
 /*  - Structure
-/*  - Grid
 /*  - Footer Styles
 /*  - Media Queries
 
@@ -186,8 +184,6 @@ pre {
 .example + pre {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  /*border: 1px solid #ccc;*/
-  /*border-top: 0;*/
 }
 pre {
   margin-bottom: 2rem;
@@ -203,9 +199,7 @@ pre {
     margin-left: 10px;
     font-family: 'Righteous',helvetica,sans-serif;
     font-size: 30px;
-    /*color: #90D4C5;*/
     color: white;
-    /*background-color: #90D4C5;*/
     background-color: #2c2c2c;
     line-height: 1.5em;
     position: relative;
@@ -1515,10 +1509,8 @@ div.image img { width: 100%; }
     .cd-nav .cd-contact-info span {
         font-size: 24px;
     }
-
     /*===== Projects =====*/
     .thumbnail-title {
         font-size: 36px;
     }
-
 }
