@@ -4,42 +4,34 @@ jQuery(document).ready(function($){
     $(".biography").on("click", function() {
         $('.biography').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.biography-details').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".bio-close-trigger").on("click", function() {
         $('.biography-details').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.biography').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".skill").on("click", function() {
         $('.skill').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.skill-details').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".ski-close-trigger").on("click", function() {
         $('.skill-details').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.skill').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".publications").on("click", function() {
         $('.publications').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.publications-details').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".pub-close-trigger").on("click", function() {
         $('.publications-details').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.publications').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".hobbies").on("click", function() {
         $('.hobbies').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.hobbies-details').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
     $(".hob-close-trigger").on("click", function() {
         $('.hobbies-details').animate({ height: 'hide' }, 'slow');   // 左に非表示
         $('.hobbies').animate({ height: 'show' }, 'slow');   // 右に表示
-        //$('biography-details').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
     });
 
 	//open/close lateral navigation
@@ -104,14 +96,4 @@ function init() {
     $(".hobbies-details").hide();
 
 }
-
-/*
-$(function () {
-    $('').on('click', () => {
-        $('img').animate({ height: 'hide' }, 'slow');   // 左に非表示
-        $('img').animate({ height: 'show' }, 'slow');   // 右に表示
-        $('img').animate({ height: 'toggle' }, 'slow'); // 左右に表示・非表示
-    });
-});
-*/
 
