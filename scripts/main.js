@@ -34,12 +34,13 @@ jQuery(document).ready(function($){
         $('.hobbies').animate({ height: 'show' }, 'slow');   // 右に表示
     });
 
+
 	//open/close lateral navigation
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
-		//stop if nav animation is running 
+		//stop if nav animation is running
 		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
+			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true;
 			
 			$('body').toggleClass('navigation-is-open');
 			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
@@ -47,9 +48,28 @@ jQuery(document).ready(function($){
 				isLateralNavAnimating = false;
 			});
 		}
-	});
+    });
+    
+    $(".DOI-link").click(function(){
+        if($(this).find("a").attr("target")=="_blank"){
+            window.open($(this).find("a").attr("href"), '_blank');
+        }else{
+            window.location=$(this).find("a").attr("href");
+        }
+    return false;
+    });
+
+    $(".hob-link").click(function(){
+        if($(this).find("a").attr("target")=="_blank"){
+            window.open($(this).find("a").attr("href"), '_blank');
+        }else{
+            window.location=$(this).find("a").attr("href");
+        }
+    return false;
+    });
 
 });
+
 
 
 ! function(a) {
